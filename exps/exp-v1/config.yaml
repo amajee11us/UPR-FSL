@@ -14,7 +14,7 @@ test:
   gpu: 0'
   load: 'exps/exp-v1/proto/max-acc.pth'
   result: 'exps/exp-v1/proto/result'
-  batch: 700
+  batch: 20000
   way: 5
   shot: 1
   query: 30

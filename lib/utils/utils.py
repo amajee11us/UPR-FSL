@@ -87,7 +87,9 @@ def copyModel(premodel_dict, model):
 def cosine(prototype, data):
     a = prototype.size()[0]
     b = data.size()[0]
-    prototype = prototype.repeat(b, 1)
+    # prototype = prototype.repeat(b, 1)
+    prototype = torch.unsqueeze(prototype, 0).repeat(b, 1, 1).permute(1, 0, 2)
+    prototype = torch.reshape(prototype, (a * b, -1))
     data = data.repeat(a, 1)
 
     cosine = torch.cosine_similarity(prototype, data, dim=1)
