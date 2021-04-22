@@ -1,0 +1,26 @@
+train:
+  max_epoch: 200
+  save_epoch: 20
+  shot: 1
+  query: 15
+  train_way: 30
+  test_way: 5
+  datasets: "mini-imageNet"
+  datapath: '/space2/songkun/datasets/mini-imagenet'
+  save_path: 'exps/exp-v7/proto'
+  gpu: '2,3'
+  pretrain: False
+  pretrainpath: ""
+  topk: 70
+  progalambda: 0.2
+test:
+  gpu: '2'
+  load: 'exps/exp-v7/proto/max-acc.pth'
+  datapath: '/space2/songkun/datasets/mini-imagenet'
+  result: 'exps/exp-v7/proto/result'
+  batch: 20000
+  way: 5
+  shot: 1
+  query: 30
+  topk: 70
+  progalambda: 0.2
