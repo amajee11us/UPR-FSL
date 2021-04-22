@@ -1,0 +1,11 @@
+sh exps/exp-v12/train.sh
+sh exps/exp-v13/train.sh
+sh exps/exp-v14/train.sh
+sh exps/exp-v15/train.sh
+sh exps/exp-v16/train.sh
+sh exps/exp-v17/train.sh
+sh exps/exp-v18/train.sh
+sh exps/exp-v19/train.sh
+sh exps/exp-v20/train.sh
+sh exps/exp-v21/train.sh
+sh exps/exp-v22/train.sh

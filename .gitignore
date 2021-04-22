@@ -4,5 +4,4 @@ exps/*/proto/result
 lib/*/__pycache__
 */__pycache__
 test.sh
-train.sh
 .vscode
